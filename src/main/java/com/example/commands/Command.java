@@ -1,3 +1,4 @@
+
 package com.example.commands;
 
 import com.example.gameHandler.Game;
@@ -11,4 +12,5 @@ public abstract class Command {
         this.serverCommand = serverCommand;
     }
     public abstract void execute();
+
 }

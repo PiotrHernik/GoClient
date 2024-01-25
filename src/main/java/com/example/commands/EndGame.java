@@ -1,3 +1,4 @@
+
 package com.example.commands;
 
 import com.example.View.EndView;
@@ -20,4 +21,5 @@ public class EndGame extends Command{
         game.setStage(game.getView().getStage());
         game.getView().getStage().show();
     }
+
 }
