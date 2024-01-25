@@ -1,5 +1,6 @@
 package ccom.example.commands;
 
+import com.example.controllers.BoardController;
 import com.example.gameHandler.Game;
 import com.example.serverCommand.MoveServer;
 import com.example.serverCommand.ServerCommand;
@@ -20,7 +21,7 @@ public class Move extends Command{
 
         if(doMove) {
             ((BoardController)game.getView().getController()).showMove(x, y, color);
-            ((GameBoardController)gameGui.getFrame().getController()).emptyPlaces(empty);
+            ((BoardController)game.getView().getController()).emptyPlaces(empty);
         } else {
             //TODO what to do when move is not correct?
         }
