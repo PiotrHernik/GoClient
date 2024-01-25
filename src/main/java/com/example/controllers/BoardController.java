@@ -45,4 +45,7 @@ public class BoardController extends Controller{
                 ((Circle) nodeFound).setFill(javafx.scene.paint.Color.TRANSPARENT);
         }
     }
+
+    public void showOpponentPass() {
+    }
 }

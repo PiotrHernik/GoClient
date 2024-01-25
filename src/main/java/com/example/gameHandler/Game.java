@@ -1,5 +1,6 @@
 package com.example.gameHandler;
 
+import com.example.View.EndView;
 import com.example.commands.Command;
 import com.example.View.View;
 import com.example.comandFactory.CommandFactory;
@@ -28,7 +29,26 @@ public class Game {
         Command command = commandFactory.getCommand(this, serverCommand);
         command.execute();
     }
+
+    public Stage getStage(){return getStage();}
+    public void setStage(Stage stage){
+        this.stage = stage;
+    }
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
     public View getView(){
         return view;
+    }
+    public void setView(View view) {
+        this.view = view;
+    }
+    public void closeConnection() {
+        client.closeConnection();
+
     }
 }
