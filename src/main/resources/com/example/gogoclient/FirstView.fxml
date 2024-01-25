@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="222.0" layoutY="34.0" prefHeight="45.0" prefWidth="154.0" text="Witaj w grze Go! " textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="69.0" layoutY="144.0" text="Zagraj nową grę">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="25.0" layoutY="178.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="180.0" AnchorPane.topAnchor="180.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="singleplayer" />
+            <RadioButton mnemonicParsing="false" text="hotseat">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="multiplayer">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+         </children>
+      </VBox>
+      <VBox layoutX="151.0" layoutY="180.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="9x9" />
+            <RadioButton mnemonicParsing="false" text="13x13">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="19x19">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Label layoutX="432.0" layoutY="144.0" text="Wczytaj grę">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="439.0" layoutY="280.0" mnemonicParsing="false" text="Wczytaj" />
+      <ComboBox layoutX="393.0" layoutY="180.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
