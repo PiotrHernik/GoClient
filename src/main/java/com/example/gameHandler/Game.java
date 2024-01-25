@@ -1,6 +1,6 @@
 package com.example.gameHandler;
 
-import ccom.example.commands.Command;
+import com.example.commands.Command;
 import com.example.View.View;
 import com.example.comandFactory.CommandFactory;
 import com.example.comandFactory.CommandFactoryClass;

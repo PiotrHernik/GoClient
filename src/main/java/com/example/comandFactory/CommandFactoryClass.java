@@ -1,8 +1,8 @@
 package com.example.comandFactory;
 
-import ccom.example.commands.Command;
-import ccom.example.commands.EndGame;
-import ccom.example.commands.Move;
+import com.example.commands.Command;
+import com.example.commands.EndGame;
+import com.example.commands.Move;
 import com.example.gameHandler.Game;
 import com.example.serverCommand.*;
 

@@ -1,4 +1,4 @@
-package ccom.example.commands;
+package com.example.commands;
 
 import com.example.gameHandler.Game;
 import com.example.serverCommand.ServerCommand;
