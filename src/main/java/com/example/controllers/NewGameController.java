@@ -89,11 +89,11 @@ public class NewGameController extends Controller implements Initializable {
         this.game = game;
     }
 
-    public int[] getGameIds() {
+    public int[] getGameID() {
         return gameIds;
     }
 
-    public void setGameIds(int[] gameIds) {
+    public void setGameID(int[] gameIds) {
         this.gameIds = gameIds;
     }
 

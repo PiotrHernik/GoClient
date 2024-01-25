@@ -45,16 +45,96 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Circle fill="DODGERBLUE" radius="31.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Circle fill="TRANSPARENT" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Circle fill="TRANSPARENT" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="1" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="2" />
+                  <Circle fill="TRANSPARENT" layoutX="286.0" layoutY="228.0" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="3" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="4" />
+                  <Circle fill="TRANSPARENT" layoutX="286.0" layoutY="228.0" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="5" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="6" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="7" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="8" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.rowIndex="1" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="41.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                  <Circle fill="TRANSPARENT" layoutX="102.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.rowIndex="2" />
+                  <Circle fill="TRANSPARENT" layoutX="163.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Circle fill="TRANSPARENT" layoutX="224.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Circle fill="TRANSPARENT" layoutX="285.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Circle fill="TRANSPARENT" layoutX="346.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <Circle fill="TRANSPARENT" layoutX="407.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                  <Circle fill="TRANSPARENT" layoutX="469.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                  <Circle fill="TRANSPARENT" layoutX="531.0" layoutY="103.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="166.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.rowIndex="3" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="166.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="166.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="166.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="166.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="166.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="166.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="166.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="228.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.rowIndex="4" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="228.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="228.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="228.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="228.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="228.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="228.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="228.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="291.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.rowIndex="5" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="291.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="291.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="291.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="291.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="291.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="291.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="291.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="353.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.rowIndex="6" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="353.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="353.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="353.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="353.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="353.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="353.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="353.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="414.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.rowIndex="7" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="414.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="414.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="414.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="414.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="414.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="414.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="414.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="475.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.rowIndex="8" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="475.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="475.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="475.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="475.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="475.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="475.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                  <Circle fill="TRANSPARENT" layoutX="41.0" layoutY="475.0" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                  <Circle fill="TRANSPARENT" layoutX="103.0" layoutY="41.0" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Circle fill="TRANSPARENT" layoutX="103.0" layoutY="166.0" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Circle fill="TRANSPARENT" layoutX="103.0" layoutY="228.0" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Circle fill="TRANSPARENT" layoutX="103.0" layoutY="291.0" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Circle fill="TRANSPARENT" layoutX="103.0" layoutY="352.0" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Circle fill="TRANSPARENT" layoutX="103.0" layoutY="414.0" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Circle fill="TRANSPARENT" layoutX="103.0" layoutY="476.0" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="8" />
                </children>
             </GridPane>
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
          <children>
-            <Button layoutX="8.0" layoutY="46.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="Zrezygnuj z ruchu" />
-            <Button layoutX="8.0" layoutY="118.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" text="Poddaj się" />
-            <Button layoutX="10.0" layoutY="328.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="109.0" text="Następny" />
+            <Button layoutX="25.0" layoutY="41.0" mnemonicParsing="false" onAction="#Pass" prefHeight="40.0" prefWidth="110.0" text="Zrezygnuj z ruchu" />
+            <Button layoutX="25.0" layoutY="118.0" mnemonicParsing="false" onAction="#Surrender" prefHeight="50.0" prefWidth="110.0" text="Poddaj się" />
+            <Button layoutX="25.0" layoutY="326.0" mnemonicParsing="false" onAction="#Next" prefHeight="49.0" prefWidth="109.0" text="Następny" />
          </children>
       </AnchorPane>
    </children>

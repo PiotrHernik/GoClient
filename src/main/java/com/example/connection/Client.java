@@ -5,7 +5,6 @@ import com.example.message.Message;
 import com.example.serverCommand.ServerCommand;
 
 import java.io.IOException;
-import java.lang.reflect.Member;
 import java.net.UnknownHostException;
 
 public class Client extends ClientConnection{
@@ -16,7 +15,7 @@ public class Client extends ClientConnection{
 
     @Override
     public void getServerCommand(ServerCommand serverCommand){
-        //game.getServerCommand(serverCommand);
+        game.getServerCommand(serverCommand);
     }
 
     public void sendMessage(Message message) throws IOException {

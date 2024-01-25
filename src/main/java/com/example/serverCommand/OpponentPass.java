@@ -1,2 +1,4 @@
-package com.example.serverCommand;public class OpponentPass {
+package com.example.serverCommand;
+
+public class OpponentPass {
 }

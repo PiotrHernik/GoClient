@@ -5,4 +5,6 @@ module com.example.gogoclient {
 
     opens com.example.gogoclient to javafx.fxml;
     exports com.example.gogoclient;
+    exports com.example.controllers;
+    opens com.example.controllers to javafx.fxml;
 }
