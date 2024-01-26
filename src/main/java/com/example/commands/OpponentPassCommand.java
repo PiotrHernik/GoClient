@@ -2,11 +2,11 @@ package com.example.commands;
 
 import com.example.controllers.BoardController;
 import com.example.gameHandler.Game;
-import com.example.serverCommand.ServerCommand;
+import com.example.MessagefromServer.Server_serverMessage;
 
-public class OpponentPass extends Command{
-    public OpponentPass(Game game, ServerCommand serverCommand) {
-        super(game, serverCommand);
+public class OpponentPassCommand extends Command{
+    public OpponentPassCommand(Game game, Server_serverMessage serverServerMessage) {
+        super(game, serverServerMessage);
     }
 
     @Override

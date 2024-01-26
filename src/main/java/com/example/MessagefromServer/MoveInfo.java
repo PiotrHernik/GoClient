@@ -1,18 +1,22 @@
-package com.example.serverCommand;
+package com.example.MessagefromServer;
 
-public class MoveServer implements ServerCommand{
+public class MoveInfo implements Server_serverMessage {
+    private static final long serialVersionUID = 1L;
     private int player;
     private int x;
     private int y;
-    int[][] emptyPlaces;
-    boolean correctMove;
-    public MoveServer(int player, boolean correctMove, int x, int y, int[][] emptyPlaces) {
+    private int[][] emptyPlaces;
+    private boolean correctMove;
+
+
+    public MoveInfo(int player, boolean correctMove, int x, int y, int[][] emptyPlaces) {
         this.player = player;
         this.x = x;
         this.y = y;
         this.correctMove = correctMove;
         this.emptyPlaces = emptyPlaces;
     }
+
     public int getPlayer() {
         return this.player;
     }

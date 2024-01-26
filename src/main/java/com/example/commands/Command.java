@@ -2,14 +2,14 @@
 package com.example.commands;
 
 import com.example.gameHandler.Game;
-import com.example.serverCommand.ServerCommand;
+import com.example.MessagefromServer.Server_serverMessage;
 
 public abstract class Command {
     Game game;
-    ServerCommand serverCommand;
-    public Command(Game game, ServerCommand serverCommand){
+    Server_serverMessage serverServerMessage;
+    public Command(Game game, Server_serverMessage serverServerMessage){
         this.game = game;
-        this.serverCommand = serverCommand;
+        this.serverServerMessage = serverServerMessage;
     }
     public abstract void execute();
 

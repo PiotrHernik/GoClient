@@ -1,23 +1,26 @@
 package com.example.comandFactory;
 
+import com.example.MessagefromServer.EndGame;
+import com.example.MessagefromServer.MoveInfo;
 import com.example.commands.*;
 import com.example.gameHandler.Game;
-import com.example.serverCommand.*;
-import com.example.serverCommand.OpponentPassServer;
+import com.example.MessagefromServer.*;
+import com.example.MessagefromServer.NewGame;
+import com.example.MessagefromServer.OpponentPass;
 
 public class CommandFactoryClass implements CommandFactory{
     @Override
-    public Command getCommand(Game game, ServerCommand serverCommand){
-        if (serverCommand instanceof SentGameOptionsServer) {
-            return new SetSettings(game, serverCommand);
-        } else if (serverCommand instanceof MoveServer) {
-            return new Move(game, serverCommand);
-        } else if (serverCommand instanceof EndGameServer) {
-            return new EndGame(game, serverCommand);
-        } else if (serverCommand instanceof NewGameServer) {
-            return new NewGame(game, serverCommand);
-        } else if (serverCommand instanceof OpponentPassServer) {
-            return new OpponentPass(game, serverCommand);
+    public Command getCommand(Game game, Server_serverMessage serverServerMessage){
+        if (serverServerMessage instanceof SentGameOptions) {
+            return new SetSettingsCommand(game, serverServerMessage);
+        } else if (serverServerMessage instanceof MoveInfo) {
+            return new MoveCommand(game, serverServerMessage);
+        } else if (serverServerMessage instanceof EndGame) {
+            return new EndGameCommand(game, serverServerMessage);
+        } else if (serverServerMessage instanceof NewGame) {
+            return new NewGameCommand(game, serverServerMessage);
+        } else if (serverServerMessage instanceof OpponentPass) {
+            return new OpponentPassCommand(game, serverServerMessage);
         }
 
         return null;

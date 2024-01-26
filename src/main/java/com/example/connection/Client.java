@@ -2,7 +2,7 @@ package com.example.connection;
 
 import com.example.gameHandler.Game;
 import com.example.message.Message;
-import com.example.serverCommand.ServerCommand;
+import com.example.MessagefromServer.Server_serverMessage;
 
 import java.io.IOException;
 import java.net.UnknownHostException;
@@ -14,8 +14,8 @@ public class Client extends ClientConnection{
     }
 
     @Override
-    public void getServerCommand(ServerCommand serverCommand){
-        game.getServerCommand(serverCommand);
+    public void getServerCommand(Server_serverMessage serverServerMessage){
+        game.getServerCommand(serverServerMessage);
     }
 
     public void sendMessage(Message message) throws IOException {

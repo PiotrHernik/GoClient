@@ -1,17 +1,20 @@
-package com.example.serverCommand;
+package com.example.MessagefromServer;
 
-public class EndGameServer implements ServerCommand{
+public class EndGame implements Server_serverMessage {
+    private static final long serialVersionUID = 1L;
+
     private boolean surrender;
     private int player1Points;
     private int player2Points;
     private int playerSurrender;
 
-    public EndGameServer(boolean surrender, int playerSurrender, int player1Points, int player2Points) {
+    public EndGame(boolean surrender, int playerSurrender, int player1Points, int player2Points) {
         this.surrender = surrender;
         this.player1Points = player1Points;
         this.player2Points = player2Points;
         this.playerSurrender = playerSurrender;
     }
+
     public boolean isSurrender() {
         return this.surrender;
     }

@@ -1,13 +1,12 @@
 package com.example.gameHandler;
 
-import com.example.View.EndView;
 import com.example.commands.Command;
 import com.example.View.View;
 import com.example.comandFactory.CommandFactory;
 import com.example.comandFactory.CommandFactoryClass;
 import com.example.connection.Client;
 import com.example.message.Message;
-import com.example.serverCommand.ServerCommand;
+import com.example.MessagefromServer.Server_serverMessage;
 import javafx.stage.Stage;
 
 public class Game {
@@ -25,8 +24,8 @@ public class Game {
 
     public void sendMessage(Message message) {
     }
-    public void getServerCommand(ServerCommand serverCommand){
-        Command command = commandFactory.getCommand(this, serverCommand);
+    public void getServerCommand(Server_serverMessage serverServerMessage){
+        Command command = commandFactory.getCommand(this, serverServerMessage);
         command.execute();
     }
 
