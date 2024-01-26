@@ -35,6 +35,7 @@ public class BoardController extends Controller{
     }
     @FXML
     void OnPassAction(ActionEvent event) {
+        System.out.println("Pasue");
         hideOpponentPass();
         Server_ClientMessage serverClientMessage = new Pass();
         game.sendMessage(serverClientMessage);
