@@ -1,6 +1,6 @@
 package com.example.serwer.MessagefromServer;
 
-public class SentGameOptions {
+public class SentGameOptions implements Server_serverMessage{
     private static final long serialVersionUID = 1L;
     private int player;
     private int size;

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.NewGameController">
+   <children>
+      <VBox layoutX="27.0" layoutY="74.0" prefHeight="32.0" prefWidth="100.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="multiplayer">
+               <toggleGroup>
+                  <ToggleGroup fx:id="typeGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="singleplayer" toggleGroup="$typeGroup" />
+            <RadioButton mnemonicParsing="false" text="hotseat" toggleGroup="$typeGroup" />
+         </children>
+      </VBox>
+      <VBox layoutX="181.0" layoutY="74.0" prefHeight="32.0" prefWidth="100.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="9x9">
+               <toggleGroup>
+                  <ToggleGroup fx:id="sizeGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="13x13" toggleGroup="$sizeGroup" />
+            <RadioButton mnemonicParsing="false" text="19x19" toggleGroup="$sizeGroup" />
+         </children>
+      </VBox>
+      <Button fx:id="startButton" layoutX="98.0" layoutY="14.0" mnemonicParsing="false" onAction="#sendGameOptions" prefHeight="38.0" prefWidth="111.0" text="Start!" />
+      <Text fx:id="textLabel" layoutX="90.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="126.39999999999986" />
+      <Button fx:id="load" layoutX="91.0" layoutY="179.0" mnemonicParsing="false" onAction="#loadChosenGame" prefHeight="54.0" prefWidth="126.0" text="Wczytaj" />
+      <ComboBox fx:id="comboBox" layoutX="81.0" layoutY="247.0" prefHeight="38.0" prefWidth="145.0" />
+   </children>
+</AnchorPane>

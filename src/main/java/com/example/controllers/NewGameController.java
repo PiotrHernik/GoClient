@@ -35,13 +35,18 @@ public class NewGameController extends Controller implements Initializable {
     private ComboBox<Integer> comboBox;
 
 
-    private int[] gameIds;
+    private int[] gameIds = {1};
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         LinkedList<Integer> oList = new LinkedList<>();
+        System.out.println(gameIds[0]);
         for (int gameId : gameIds) {
             oList.add(gameId);
+
+        }
+        for (int i : oList){
+            System.out.println(i);
         }
         comboBox.getItems().addAll(oList);
     }
@@ -61,6 +66,7 @@ public class NewGameController extends Controller implements Initializable {
     @FXML
     void sendGameOptions(ActionEvent event) {
         System.out.println(event.toString());
+        System.out.println("Kliknąłem start");
         int size;
         String type;
         RadioButton selectedTypeButton = (RadioButton) typeGroup.getSelectedToggle();
@@ -77,6 +83,7 @@ public class NewGameController extends Controller implements Initializable {
                 System.out.println("Size się nei ustawił w NewGame Frame > SendGameOptions.");
                 size=0;
             }
+            System.out.println("Wysyłam do servera");
             Server_ClientMessage serverClientMessage = new SetOptions(size,type);
             game.sendMessage(serverClientMessage);
         } else {

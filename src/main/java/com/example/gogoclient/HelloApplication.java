@@ -27,7 +27,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         Game game = new Game(stage, client);
         System.out.println("Stworzyłem klienta i uruchamiam połaczenie");
-        //game.ShowFirstView();
+        game.ShowWaitView();
         client.setGame(game);
         client.startConnection();
     }

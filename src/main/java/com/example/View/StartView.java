@@ -13,7 +13,7 @@ public class StartView extends View{
     public StartView(Game game, int[] gameID) {
         try{
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/Board9.fxml"));
+            loader.setLocation(getClass().getResource("/FXMLNewGameFrame.fxml"));
             Parent root = loader.load();
             NewGameController controller = loader.<NewGameController>getController();
             controller.setGame(game);

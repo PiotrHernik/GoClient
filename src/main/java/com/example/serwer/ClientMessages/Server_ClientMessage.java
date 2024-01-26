@@ -1,4 +1,6 @@
 package com.example.serwer.ClientMessages;
 
-public interface Server_ClientMessage {
+import java.io.Serializable;
+
+public interface Server_ClientMessage extends Serializable {
 }

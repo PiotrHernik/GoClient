@@ -15,6 +15,7 @@ public class Client extends ClientConnection{
 
     @Override
     public void getServerCommand(Server_serverMessage serverServerMessage){
+
         game.getServerCommand(serverServerMessage);
     }
 

@@ -1,6 +1,10 @@
 package com.example.serwer.ClientMessages;
 
+
+
 public class Move implements Server_ClientMessage {
+
+    private static final long serialVersionUID = 1L;
     private int x;
     private int y;
 

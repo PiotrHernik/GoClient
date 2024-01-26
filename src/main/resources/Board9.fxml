@@ -19,7 +19,7 @@
          <children>
             <ImageView fitHeight="564.0" fitWidth="584.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@board9.png" />
+                  <Image url="@com/example/gogoclient/board9.png" />
                </image>
             </ImageView>
             <GridPane fx:id="gridPane" layoutX="8.0" layoutY="21.0" prefHeight="557.0" prefWidth="552.0">
