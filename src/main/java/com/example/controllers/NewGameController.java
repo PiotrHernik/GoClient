@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
 
-public class NewGameController extends Controller implements Initializable {
+public class NewGameController extends Controller{
     @FXML
     private Text textLabel;
 
@@ -35,21 +35,21 @@ public class NewGameController extends Controller implements Initializable {
     private ComboBox<Integer> comboBox;
 
 
-    private int[] gameIds = {1};
+    private int[] gameIds;
 
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        LinkedList<Integer> oList = new LinkedList<>();
-        System.out.println(gameIds[0]);
-        for (int gameId : gameIds) {
-            oList.add(gameId);
-
-        }
-        for (int i : oList){
-            System.out.println(i);
-        }
-        comboBox.getItems().addAll(oList);
-    }
+//    @Override
+//    public void initialize(URL url, ResourceBundle rb) {
+//        LinkedList<Integer> oList = new LinkedList<>();
+//       //System.out.println(gameIds[0]);
+//        for (int gameId : gameIds) {
+//            oList.add(gameId);
+//
+//        }
+//        for (int i : oList){
+//            System.out.println(i);
+//        }
+//        comboBox.getItems().addAll(oList);
+//    }
 
     @FXML
     void loadChosenGame(ActionEvent event) {
@@ -97,6 +97,16 @@ public class NewGameController extends Controller implements Initializable {
 
     public void setGameID(int[] gameIds) {
         this.gameIds = gameIds;
+        LinkedList<Integer> oList = new LinkedList<>();
+        //System.out.println(gameIds[0]);
+        for (int gameId : gameIds) {
+            oList.add(gameId);
+
+        }
+        for (int i : oList){
+            System.out.println(i);
+        }
+        comboBox.getItems().addAll(oList);
     }
 
 }

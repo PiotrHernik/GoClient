@@ -12,11 +12,15 @@ import java.io.IOException;
 public class StartView extends View{
     public StartView(Game game, int[] gameID) {
         try{
+            for (int i : gameID){
+                System.out.println(i);
+            }
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/FXMLNewGameFrame.fxml"));
             Parent root = loader.load();
             NewGameController controller = loader.<NewGameController>getController();
             controller.setGame(game);
+
             controller.setGameID(gameID);
             Stage stage = new Stage();
             stage.setTitle("New game");
