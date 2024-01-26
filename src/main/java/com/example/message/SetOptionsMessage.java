@@ -1,18 +1,18 @@
 package com.example.message;
 
-public class SetOptions implements Message{
+public class SetOptionsMessage implements Message{
     int size;
     String mode; //hotSeat, Online, Multiplayer
     int gameId;
 
 
 
-    public SetOptions(int size, String mode, int gameId) {
+    public SetOptionsMessage(int size, String mode, int gameId) {
         this.size = size;
         this.mode = mode;
         this.gameId = gameId;
     }
-    public SetOptions(int size, String mode) {
+    public SetOptionsMessage(int size, String mode) {
         this.size = size;
         this.mode = mode;
     }

@@ -1,8 +1,12 @@
 package com.example.controllers;
 
+import com.example.gameHandler.Game;
+import com.example.message.*;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
@@ -13,6 +17,35 @@ public class BoardController extends Controller{
 
     @FXML
     private Text pass;
+
+    @FXML
+    void OnNextAction(ActionEvent event) {
+        hideOpponentPass();
+        Message message = new NextMessage();
+        game.sendMessage(message);
+    }
+    @FXML
+    void MakeMove(MouseEvent event) {
+        hideOpponentPass();
+        Node node = (Node) event.getSource();
+        int x = GridPane.getRowIndex(node);
+        int y = GridPane.getColumnIndex(node);
+        Message message = new MoveMessage(x,y);
+        System.out.println(x + " " + y);
+        game.sendMessage(message);
+    }
+    @FXML
+    void OnPassAction(ActionEvent event) {
+        hideOpponentPass();
+        Message message = new PassMessage();
+        game.sendMessage(message);
+    }
+    @FXML
+    void OnSurrenderAction(ActionEvent event) {
+        hideOpponentPass();
+        Message message = new SurrenderMessage();
+        game.sendMessage(message);
+    }
 
     public void showMove(int x, int y, int color) {
         Node node = findNode(x,y);
@@ -46,6 +79,8 @@ public class BoardController extends Controller{
         }
     }
 
-    public void showOpponentPass() {
+    public void showOpponentPass() { pass.setText("Przeciwnik czeka"); }
+    public void hideOpponentPass() {
+        pass.setText("");
     }
 }

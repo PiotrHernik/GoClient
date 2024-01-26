@@ -2,7 +2,7 @@ package com.example.controllers;
 
 import com.example.gameHandler.Game;
 import com.example.message.Message;
-import com.example.message.SetOptions;
+import com.example.message.SetOptionsMessage;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -41,9 +41,8 @@ public class NewGameController extends Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         LinkedList<Integer> oList = new LinkedList<>();
-        for(int i = 0; i<gameIds.length;i++) {
-            oList.add(new Integer(gameIds[i]));
-
+        for (int gameId : gameIds) {
+            oList.add(gameId);
         }
         comboBox.getItems().addAll(oList);
     }
@@ -53,7 +52,7 @@ public class NewGameController extends Controller implements Initializable {
         int gameId = comboBox.getValue();
         if(gameId != -1) {
             System.out.println("Dziala" + gameId);
-            Message message = new SetOptions(0,"Load",gameId);
+            Message message = new SetOptionsMessage(0,"Load",gameId);
             game.sendMessage(message);
         } else {
             textLabel.setText("Nie wybrales opcji!");
@@ -61,7 +60,7 @@ public class NewGameController extends Controller implements Initializable {
     }
 
     @FXML
-    void SendGameOptions(ActionEvent event) {//TODO handle exceptions better!
+    void sendGameOptions(ActionEvent event) {
         System.out.println(event.toString());
         int size;
         String type;
@@ -79,14 +78,11 @@ public class NewGameController extends Controller implements Initializable {
                 System.out.println("Size się nei ustawił w NewGame Frame > SendGameOptions.");
                 size=0;
             }
-            Message message = new SetOptions(size,type);
+            Message message = new SetOptionsMessage(size,type);
             game.sendMessage(message);
         } else {
             textLabel.setText("Nie wybrales opcji!");
         }
-    }
-    public void setGameGui(Game game) {
-        this.game = game;
     }
 
     public int[] getGameID() {

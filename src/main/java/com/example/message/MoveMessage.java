@@ -1,10 +1,10 @@
 package com.example.message;
 
-public class Move implements Message{
+public class MoveMessage implements Message{
     private int x;
     private int y;
 
-    public Move(int setX, int setY) {
+    public MoveMessage(int setX, int setY) {
         this.x=setX;
         this.y=setY;
     }

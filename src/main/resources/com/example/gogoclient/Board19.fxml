@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane alignment="CENTER" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientApplication.GoGame.Gui.Controller.GameBoardController">
+<GridPane alignment="CENTER" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.BoardController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="601.5999877929687" minWidth="10.0" prefWidth="601.5999877929687" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="449.60003662109375" minWidth="10.0" prefWidth="160.80001220703127" />
