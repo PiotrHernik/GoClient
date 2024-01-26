@@ -56,7 +56,7 @@ public class NewGameController extends Controller{
         int gameId = comboBox.getValue();
         if(gameId != -1) {
             System.out.println("Dziala" + gameId);
-            Server_ClientMessage serverClientMessage = new SetOptions(0,"Load",gameId);
+            Server_ClientMessage serverClientMessage = new SetOptions(0,"Load", gameId);
             game.sendMessage(serverClientMessage);
         } else {
             textLabel.setText("Nie wybrales opcji!");
