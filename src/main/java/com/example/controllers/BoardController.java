@@ -1,7 +1,6 @@
 package com.example.controllers;
 
-import com.example.gameHandler.Game;
-import com.example.message.*;
+import com.example.serwer.ClientMessages.*;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -21,8 +20,8 @@ public class BoardController extends Controller{
     @FXML
     void OnNextAction(ActionEvent event) {
         hideOpponentPass();
-        Message message = new NextMessage();
-        game.sendMessage(message);
+        Server_ClientMessage serverClientMessage = new Next();
+        game.sendMessage(serverClientMessage);
     }
     @FXML
     void MakeMove(MouseEvent event) {
@@ -30,21 +29,21 @@ public class BoardController extends Controller{
         Node node = (Node) event.getSource();
         int x = GridPane.getRowIndex(node);
         int y = GridPane.getColumnIndex(node);
-        Message message = new MoveMessage(x,y);
+        Server_ClientMessage serverClientMessage = new Move(x,y);
         System.out.println(x + " " + y);
-        game.sendMessage(message);
+        game.sendMessage(serverClientMessage);
     }
     @FXML
     void OnPassAction(ActionEvent event) {
         hideOpponentPass();
-        Message message = new PassMessage();
-        game.sendMessage(message);
+        Server_ClientMessage serverClientMessage = new Pass();
+        game.sendMessage(serverClientMessage);
     }
     @FXML
     void OnSurrenderAction(ActionEvent event) {
         hideOpponentPass();
-        Message message = new SurrenderMessage();
-        game.sendMessage(message);
+        Server_ClientMessage serverClientMessage = new Surrender();
+        game.sendMessage(serverClientMessage);
     }
 
     public void showMove(int x, int y, int color) {

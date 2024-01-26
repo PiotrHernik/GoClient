@@ -1,10 +1,10 @@
 
 package com.example.commands;
 
-import com.example.MessagefromServer.MoveInfo;
+import com.example.serwer.MessagefromServer.MoveInfo;
 import com.example.controllers.BoardController;
 import com.example.gameHandler.Game;
-import com.example.MessagefromServer.Server_serverMessage;
+import com.example.serwer.MessagefromServer.Server_serverMessage;
 
 public class MoveCommand extends Command{
 

@@ -1,8 +1,8 @@
 package com.example.connection;
 
 import com.example.commands.EndGameCommand;
-import com.example.message.Message;
-import com.example.MessagefromServer.Server_serverMessage;
+import com.example.serwer.ClientMessages.Server_ClientMessage;
+import com.example.serwer.MessagefromServer.Server_serverMessage;
 import javafx.application.Platform;
 
 import java.io.IOException;
@@ -20,8 +20,8 @@ public abstract class ClientConnection {
 
     protected abstract void getServerCommand(Server_serverMessage serverServerMessage);
 
-    protected void sendMessageToServer(Message message) throws IOException {
-        clientThred.outputStream.writeObject(message);
+    protected void sendMessageToServer(Server_ClientMessage serverClientMessage) throws IOException {
+        clientThred.outputStream.writeObject(serverClientMessage);
     }
     public void closeConnection() {
         clientThred.closeConnection();

@@ -1,12 +1,8 @@
 package com.example.comandFactory;
 
-import com.example.MessagefromServer.EndGame;
-import com.example.MessagefromServer.MoveInfo;
 import com.example.commands.*;
 import com.example.gameHandler.Game;
-import com.example.MessagefromServer.*;
-import com.example.MessagefromServer.NewGame;
-import com.example.MessagefromServer.OpponentPass;
+import com.example.serwer.MessagefromServer.*;
 
 public class CommandFactoryClass implements CommandFactory{
     @Override

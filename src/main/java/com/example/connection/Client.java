@@ -1,8 +1,8 @@
 package com.example.connection;
 
 import com.example.gameHandler.Game;
-import com.example.message.Message;
-import com.example.MessagefromServer.Server_serverMessage;
+import com.example.serwer.ClientMessages.Server_ClientMessage;
+import com.example.serwer.MessagefromServer.Server_serverMessage;
 
 import java.io.IOException;
 import java.net.UnknownHostException;
@@ -18,8 +18,8 @@ public class Client extends ClientConnection{
         game.getServerCommand(serverServerMessage);
     }
 
-    public void sendMessage(Message message) throws IOException {
-        this.sendMessageToServer(message);
+    public void sendMessage(Server_ClientMessage serverClientMessage) throws IOException {
+        this.sendMessageToServer(serverClientMessage);
     }
 
     public void setGame(Game game){

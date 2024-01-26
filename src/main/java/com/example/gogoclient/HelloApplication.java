@@ -16,7 +16,7 @@ public class HelloApplication extends Application {
     }
     public void init(){
         try{
-            client = new Client("localhost", 3311);
+            client = new Client("localhost", 59898);
         } catch (IOException ex){
             ex.printStackTrace();
         }

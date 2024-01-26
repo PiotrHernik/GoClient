@@ -2,8 +2,8 @@ package com.example.commands;
 
 import com.example.View.BoardView;
 import com.example.gameHandler.Game;
-import com.example.MessagefromServer.SentGameOptions;
-import com.example.MessagefromServer.Server_serverMessage;
+import com.example.serwer.MessagefromServer.SentGameOptions;
+import com.example.serwer.MessagefromServer.Server_serverMessage;
 
 public class SetSettingsCommand extends Command{
     public SetSettingsCommand(Game game, Server_serverMessage serverServerMessage) {

@@ -2,7 +2,7 @@
 package com.example.commands;
 
 import com.example.gameHandler.Game;
-import com.example.MessagefromServer.Server_serverMessage;
+import com.example.serwer.MessagefromServer.Server_serverMessage;
 
 public abstract class Command {
     Game game;

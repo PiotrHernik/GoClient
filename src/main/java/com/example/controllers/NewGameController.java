@@ -1,8 +1,7 @@
 package com.example.controllers;
 
-import com.example.gameHandler.Game;
-import com.example.message.Message;
-import com.example.message.SetOptionsMessage;
+import com.example.serwer.ClientMessages.Server_ClientMessage;
+import com.example.serwer.ClientMessages.SetOptions;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -52,8 +51,8 @@ public class NewGameController extends Controller implements Initializable {
         int gameId = comboBox.getValue();
         if(gameId != -1) {
             System.out.println("Dziala" + gameId);
-            Message message = new SetOptionsMessage(0,"Load",gameId);
-            game.sendMessage(message);
+            Server_ClientMessage serverClientMessage = new SetOptions(0,"Load",gameId);
+            game.sendMessage(serverClientMessage);
         } else {
             textLabel.setText("Nie wybrales opcji!");
         }
@@ -78,8 +77,8 @@ public class NewGameController extends Controller implements Initializable {
                 System.out.println("Size się nei ustawił w NewGame Frame > SendGameOptions.");
                 size=0;
             }
-            Message message = new SetOptionsMessage(size,type);
-            game.sendMessage(message);
+            Server_ClientMessage serverClientMessage = new SetOptions(size,type);
+            game.sendMessage(serverClientMessage);
         } else {
             textLabel.setText("Nie wybrales opcji!");
         }

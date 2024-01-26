@@ -5,8 +5,8 @@ import com.example.View.View;
 import com.example.comandFactory.CommandFactory;
 import com.example.comandFactory.CommandFactoryClass;
 import com.example.connection.Client;
-import com.example.message.Message;
-import com.example.MessagefromServer.Server_serverMessage;
+import com.example.serwer.ClientMessages.Server_ClientMessage;
+import com.example.serwer.MessagefromServer.Server_serverMessage;
 import javafx.stage.Stage;
 
 public class Game {
@@ -22,7 +22,7 @@ public class Game {
         this.commandFactory = new CommandFactoryClass();
     }
 
-    public void sendMessage(Message message) {
+    public void sendMessage(Server_ClientMessage serverClientMessage) {
     }
     public void getServerCommand(Server_serverMessage serverServerMessage){
         Command command = commandFactory.getCommand(this, serverServerMessage);
