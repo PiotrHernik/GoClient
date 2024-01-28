@@ -5,9 +5,7 @@ public class NewGame implements Server_serverMessage {
 
     private int[] gamesIdList;
     public NewGame(int[] gamesIdList) {
-        System.out.println("Przed przypisaniem tablicy");
         this.gamesIdList = gamesIdList;
-        System.out.println("Po przypisaniu tablicy");
     }
 
     public int[] getGamesIdList() {

@@ -12,9 +12,7 @@ public class NewGameCommand extends Command{
 
     @Override
     public void execute() {
-        System.out.println("Jestem w NewGameCommand");
         game.setView(new StartView(game,((NewGame) serverServerMessage).getGamesIdList()));
-        System.out.println("Jestem za nowym widokiem");
         game.getStage().close();
         game.setStage(game.getView().getStage());
         game.getStage().show();
