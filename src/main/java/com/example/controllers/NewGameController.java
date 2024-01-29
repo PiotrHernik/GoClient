@@ -5,10 +5,7 @@ import com.example.serwer.ClientMessages.SetOptions;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 import javafx.scene.text.Text;
 
 import java.net.URL;
@@ -16,8 +13,14 @@ import java.util.LinkedList;
 import java.util.ResourceBundle;
 
 public class NewGameController extends Controller{
+//    @FXML
+//    private Text textLabel;
     @FXML
-    private Text textLabel;
+    private Label label1;
+    @FXML
+    private Label label2;
+    @FXML
+    private Label label3;
 
     @FXML
     private ToggleGroup typeGroup;
@@ -59,7 +62,7 @@ public class NewGameController extends Controller{
             Server_ClientMessage serverClientMessage = new SetOptions(0,"Load", gameId);
             game.sendMessage(serverClientMessage);
         } else {
-            textLabel.setText("Nie wybrales opcji!");
+            //textLabel.setText("Nie wybrales opcji!");
         }
     }
 
@@ -87,7 +90,7 @@ public class NewGameController extends Controller{
             Server_ClientMessage serverClientMessage = new SetOptions(size,type);
             game.sendMessage(serverClientMessage);
         } else {
-            textLabel.setText("Nie wybrales opcji!");
+            //textLabel.setText("Nie wybrales opcji!");
         }
     }
 

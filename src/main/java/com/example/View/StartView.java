@@ -13,7 +13,7 @@ public class StartView extends View{
     public StartView(Game game, int[] gameID) {
         try{
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/FXMLNewGameFrame.fxml"));
+            loader.setLocation(getClass().getResource("/FirstView.fxml"));
             Parent root = loader.load();
             NewGameController controller = loader.<NewGameController>getController();
             controller.setGame(game);
@@ -21,7 +21,7 @@ public class StartView extends View{
             controller.setGameID(gameID);
             Stage stage = new Stage();
             stage.setTitle("New game");
-            stage.setScene(new Scene(root, 500, 500));
+            stage.setScene(new Scene(root, 600, 420));
             this.stage = stage;
             stage.show();
 
